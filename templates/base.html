@@ -10,50 +10,8 @@
 </head>
 
 <body>
-    <h1>Signup</h1>
-    <form method="post">
-        <table>
-            <tbody>
-                <tr>
-                    <td>
-                        <label for="username">Username</label>
-                    </td>
-                    <td>
-                        <input id="username" type="text" name="username">
-                        <span class="error">That's not a valid username</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="password">Password</label>
-                    </td>
-                    <td>
-                        <input id="password" type="password" name="password">
-                        <span class="error">That's not a valid password</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="verify-pw">Verify Password</label>
-                    </td>
-                    <td>
-                        <input id="verify-pw" type="password" name="password">
-                        <span class="error">Passwords don't match</span>
-                    </td>
-                </tr>
-                <tr>
-                    <td>
-                        <label for="email">Email (optional)</label>
-                    </td>
-                    <td>
-                        <input id="email" type="text" name="email">
-                        <span class="error"></span>
-                    </td>
-                </tr>
-            </tbody>
-        </table>
-        <input type="submit">
-    </form>
+    {% block content %}
+    {% endblock %}
 </body>
 
 </html>
